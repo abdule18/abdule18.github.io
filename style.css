@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color:azure;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color:deepskyblue;
+}
+.container .hero {
+  position: relative;
+  z-index: 10;
+  height: 85vh;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  border: 3px solid lightskyblue;
+  border-radius: 20px;
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+  padding: 0 20px 0 90px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+.hero nav .logo {
+  color:papayawhip;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.hero nav .nav-link a {
+  color:rgba(2, 39, 58, 0.886);
+  margin-left: 40px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.hero nav .nav-link a:hover,
+.hero nav .nav-link a.active {
+  color:lightslategrey;
+}
+.hero .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .content .div-text {
+  width: 40%;
+}
+.hero .content .div-text h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: aliceblue;
+}
+.hero .content .div-text h4 {
+  color: lightcyan;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.hero .content .div-text .btn {
+  padding: 15px 20px;
+  background-color: papayawhip;
+  border: 2px solid papayawhip;
+  color:lightslategray;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.hero .content .div-text .btn:hover{
+  color: antiquewhite;
+  transition: 0.3s;
+  background-color: transparent;
+}
+.hero .content .div-img {
+  width: 40%;
+}
+.hero .content .div-img img {
+  width: 100%;
+  border-radius: 50px;
+}
